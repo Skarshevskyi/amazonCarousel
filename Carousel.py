@@ -20,7 +20,6 @@ class Carousel():
         carousel_list = driver.find_elements(By.XPATH, _carousel)
         length_of_carousel = len(carousel_list)
         print("length of carousel items is: " +str(length_of_carousel))
-        print("hello")
 
         for element in range(length_of_carousel):
             if not carousel_list[element].is_displayed():
